@@ -1,0 +1,27 @@
+{% extends 'BenignDevApp/base.html' %}
+{% load static %}
+{% block content %}
+<h2 class="text-center" style="margin-top: 120px;">ICT Subject Resources</h2>
+<div class="container mt-4 text-center">
+    <a href="https://teachers.gov.bd/profile/tayef" class="btn btn-success">শিক্ষক বাতায়নের লিংক</a>
+    <a href="https://scholar.google.com/citations?user=BZuGG-gAAAAJ&hl=en" class="btn btn-success">Google Scholar Link</a>
+<table class="table text-center mt-3">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Download</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for r in ictr %}
+      <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>{{r.rname}}</td>
+        <td><a href="{{r.file.url}}" target="_blank" style="color:green;">{{r.file}}</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock content %}

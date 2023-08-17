@@ -1,0 +1,21 @@
+<div class="container bg-success pb-3" id="team">
+    <h2 class="text-center text-white pt-5">
+      Team
+    </h2>
+    <div class="row mt-4 mx-2">
+        {% for member in members  %}
+            <div class="col-lg-3 col-sm-6 mb-2">
+                <div class="card" style="height: 300px;">
+                <div class="card-body text-center">
+                    <img src="{{member.mimage.url}}" alt="" class="img-fluid" height="100px" width="100px"
+                    style="border-radius: 100px;">
+                    <h5 class="card-title mt-3">{{member.mname}}</h5>
+                    <p class="card-text fst-italic my-0">{{member.designation}}</p>
+                    <p class="card-text fst-italic my-0">Email: {{member.email}}</p>
+                    <p class="card-text fst-italic my-0">Phone: {{member.phone}}</p>
+                </div>
+                </div>
+            </div>
+         {% endfor %}
+    </div>
+  </div>

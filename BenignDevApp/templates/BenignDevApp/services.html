@@ -1,0 +1,11 @@
+<div class="container text-center border-bottom" id="service">
+    <h2 class="pt-5 pb-3">Our Services</h2>
+    <div class="row mt-4">
+        {% for service in services  %}
+            <div class="col-sm-4 mb-4">
+                <a href="#"><i class="fa fa-{{service.slogo}} fa-10x" style="color: rgb(4, 153, 153);"></i></a>
+                <h4 class="mt-4">{{service.sname}}</h4>
+            </div>
+        {% endfor %}
+    </div>
+  </div>

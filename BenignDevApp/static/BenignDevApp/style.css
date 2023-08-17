@@ -1,0 +1,51 @@
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: wheat;
+} */
+#navbarSupportedContent > ul > li > a{
+    color: rgb(239, 245, 239);
+}
+#navbarSupportedContent > ul > li > a:hover{
+    color: rgb(173, 245, 173); 
+}
+a{
+    text-decoration: none;
+    color: rgb(173, 245, 173); 
+}
+.navbar-brand{
+    color: rgb(173, 245, 173); 
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+.navbar-text {
+    color: rgb(173, 245, 173);
+    font-style: italic;
+    font-size: 1em;
+}
+h2{
+    color: #14A44D;
+    font-weight: bold;
+}
+/* .navbar-toggler {
+    color: white;
+} */
+.back-image{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-color: white;
+    background-blend-mode: multiply;
+    /* padding: 15%; */
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.st{
+    text-shadow: 
+    2px 0px 0px rgb(173, 245, 173),   /* Right shadow */
+    -2px 0px 0px rgb(173, 245, 173), /* Left shadow */
+    0px 2px 0px rgb(173, 245, 173),  /* Bottom shadow */
+    0px -2px 0px rgb(173, 245, 173);  /* Top shadow */
+    color: white; 
+}
